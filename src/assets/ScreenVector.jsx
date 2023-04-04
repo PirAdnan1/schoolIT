@@ -1,0 +1,12 @@
+import React from 'react'
+
+function ScreenVector() {
+  return (
+    <svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M52.2241 0H66.5855V16.6758H52.2241V0Z" fill="#6B64D7"/>
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M119.985 19.6971C119.985 17.1871 117.581 15.1505 114.62 15.1505H5.36481C2.39608 15.1505 0 17.1871 0 19.6971V29.5869H7.24852V90.0753H40.658L23.3656 110.651C22.1525 111.869 22.6045 114.296 24.3903 116.077L27.6303 119.301L52.6987 90.9696V120H66.6457V90.1955L92.4074 119.294L95.6398 116.07C97.4256 114.296 97.8852 111.861 96.6646 110.644L78.8447 90.0678H112.043V29.5794H120V19.6971H119.985ZM105.202 83.4621H14.2409V29.5869H105.202V83.4621Z" fill="#6B64D7"/>
+    </svg>
+  )
+}
+
+export default ScreenVector
