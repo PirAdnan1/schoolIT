@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import Link from "next/link";
 // Firebase
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../config/config";
@@ -51,13 +51,13 @@ const onSubmit = () => {
   return (
     <div className="grid sm:grid-cols-2">
       <div className="max-w-[570px] text-white  flex flex-col px-4 md:px-0 h-screen justify-center items-center bg-[#F18585]">
-        <h1 className="text-[40px]">Already Signed up?</h1>
+        <h1 className="text-[40px]">Not Signed Up Yet?</h1>
         <p className="mt-9 max-w-[455px] text-center">
-          To stay connected with us please login with your personal info
+        Click the link below to get started
         </p>
-        <button className="bg-[#F18585] border border-white text-white mt-5 hover:bg-white hover:text-[#F18585] hover:border-2 hover:border-[#F18585] px-20 py-2 rounded-full max-w-[340px]">
+        <Link href="/signup" className="bg-[#F18585] border border-white text-white mt-5 hover:bg-white hover:text-[#F18585] hover:border-2 hover:border-[#F18585] px-20 py-2 rounded-full max-w-[340px]">
           Sign Up
-        </button>
+        </Link>
       </div>
       <div>
         <div className="mt-14">
@@ -74,7 +74,7 @@ const onSubmit = () => {
               <input
               {...register("email")}
                 type="email"
-                className="px-3 border-2 outline-none border-[#F18585B2] py-1.5 w-96 rounded-md"
+                className="px-3 border outline-none border-[#F18585B2] py-3 w-96 rounded-md"
                 placeholder="Email"
                 onChange={(e) => setEmail(e.target.value)}
               />
@@ -86,7 +86,7 @@ const onSubmit = () => {
               <input
               {...register("password")}
                 type="password"
-                className="px-3 outline-none border-2 border-[#F18585B2] py-1.5 w-96 max-w-[638px] rounded-md"
+                className="px-3 outline-none border border-[#F18585B2] py-3 w-96 max-w-[638px] rounded-md"
                 placeholder="Password"
                 onChange={(e) => setPassword(e.target.value)}
               />

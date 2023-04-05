@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Link from "next/link";
 import Logo from "@/src/assets/logo";
 // Firebase
 import { createUserWithEmailAndPassword } from "firebase/auth";
@@ -62,15 +63,15 @@ function Form() {
           <p className="mt-9 max-w-[455px] text-center">
             To stay connected with us please login with your personal info
           </p>
-          <button className="bg-[#F18585] border border-white text-white mt-5 px-20 py-2 hover:bg-white hover:text-[#F18585] hover:border-2 hover:border-[#F18585] rounded-full max-w-[340px]">
-            Sign Up
-          </button>
+          <Link href="/login" className="bg-[#F18585] border border-white text-white mt-5 px-20 py-2 hover:bg-white hover:text-[#F18585] hover:border-2 rounded-full max-w-[340px]">
+            Sign In
+          </Link>
         </div>
         <div>
           <div className="mt-14">
             <Logo />
           </div>
-          <div className="mt-14 px-4 md:px-0">
+          <div className="mt-7 px-4 md:px-0">
             <h1 className="text-[40px] font-bold">Create Account</h1>
             <p className="mt-9 text-[18px]">
               Let’s get you all set up for your first onboarding experience{" "}
@@ -80,7 +81,7 @@ function Form() {
               <input
                 {...register("firstName")}
                 type="text"
-                className="outline-none max-w-[538px] my-3 py-1.5 px-4 rounded-md border-2 border-[#F18585B2]"
+                className="outline-none max-w-[538px] my-3 py-3 px-4 rounded-md border border-[#F18585B2]"
                 onChange={(e) => setfirstName(e.target.value)}
                 placeholder="FirstName"
               />
@@ -90,7 +91,7 @@ function Form() {
               <input
                 {...register("lastName")}
                 type="text"
-                className="outline-none max-w-[538px] my-3 py-1.5 px-4 border-2 rounded-md border-[#F18585B2]"
+                className="outline-none max-w-[538px] my-3 py-3 px-4 border rounded-md border-[#F18585B2]"
                 onChange={(e) => setLastName(e.target.value)}
                 placeholder="LastName"
               />
@@ -99,7 +100,7 @@ function Form() {
               <input
                 {...register("email")}
                 type="email"
-                className="outline-none max-w-[538px] my-3 py-1.5 px-4 border-2 rounded-md border-[#F18585B2]"
+                className="outline-none max-w-[538px] my-3 py-3 px-4 border rounded-md border-[#F18585B2]"
                 onChange={(e) => setEmail(e.target.value)}
                 placeholder="Email"
               />
@@ -110,7 +111,7 @@ function Form() {
               <input
                 {...register("password")}
                 type="password"
-                className="outline-none max-w-[538px] my-3 py-1.5 px-4 border-2 rounded-md border-[#F18585B2]"
+                className="outline-none max-w-[538px] my-3 py-3 px-4 border rounded-md border-[#F18585B2]"
                 onChange={(e) => setPassword(e.target.value)}
                 placeholder="Password"
               />
@@ -118,7 +119,7 @@ function Form() {
                 <p className="text-red-700">{errors.password.message}</p>
               )}
 
-              <button className=" bg-[#F18585] text-white mt-2 px-4 py-2 hover:bg-white hover:text-[#F18585] hover:border-2 hover:border-[#F18585] rounded-full max-w-[340px]">
+              <button className=" bg-[#F18585] text-white my-2 px-4 py-2 hover:bg-white hover:text-[#F18585] hover:border-2 hover:border-[#F18585] rounded-full max-w-[340px]">
                 Sign In
               </button>
             </form>
