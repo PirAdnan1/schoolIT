@@ -2,6 +2,7 @@ import Head from 'next/head'
 
 // components
 import HomeContents from '../components/home/Index'
+
 export default function Home() {
 
   return (

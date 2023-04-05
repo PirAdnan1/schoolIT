@@ -74,7 +74,7 @@ const onSubmit = () => {
               <input
               {...register("email")}
                 type="email"
-                className="px-3 border outline-none border-[#F18585B2] py-3 w-96 rounded-md"
+                className="outline-none max-w-[538px] my-3 py-3 px-4 border rounded-md border-[#F18585B2]"
                 placeholder="Email"
                 onChange={(e) => setEmail(e.target.value)}
               />
@@ -86,7 +86,7 @@ const onSubmit = () => {
               <input
               {...register("password")}
                 type="password"
-                className="px-3 outline-none border border-[#F18585B2] py-3 w-96 max-w-[638px] rounded-md"
+                className="outline-none max-w-[538px] my-3 py-3 px-4 border rounded-md border-[#F18585B2]"
                 placeholder="Password"
                 onChange={(e) => setPassword(e.target.value)}
               />
