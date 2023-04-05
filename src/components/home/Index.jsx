@@ -5,6 +5,7 @@ import Navbar from '../Navbar'
 import Hero from './Hero'
 import SectionB from './sectionB'
 import SectionC from './SectionC'
+import Footer from '../Footer'
 // assets
 function Index() {
   return (
@@ -13,6 +14,7 @@ function Index() {
     <Hero />
     <SectionB />
     <SectionC />
+    <Footer />
    </>
   )
 }

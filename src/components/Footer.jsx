@@ -1,0 +1,36 @@
+import React from 'react'
+import Link from 'next/link'
+
+// components
+import Container from './container'
+
+
+// assets
+import Logo from '../assets/logo'
+
+
+function Footer() {
+  return (
+    <Container>
+    <div className='grid sm:grid-cols-3 items-center space-y-7 sm:space-y-0 justify-items-center mt-36'>
+        <div>
+        <Logo />
+        </div>
+        <div className='flex flex-col text-[24px]'>
+            <h5>Legal</h5>
+            <Link href="#" className='text-[#F18585] mt-6'>Terms</Link>
+            <Link href="#" className='text-[#F18585] mt-6'>Privacy</Link>
+            <Link href="#" className='text-[#F18585] mt-6'>Cookies</Link>
+        </div>
+        <div className='flex flex-col text-[24px]'>
+            <h5 className='text-center'>Contact us</h5>
+            <span className='text-[#F18585] mt-6 text-center'>contact@piradnan.com</span>
+           <span className='text-[#F18585] mt-6 text-center'>+992-235432132</span> 
+        </div>
+    </div>
+    <p className='text-base text-center mt-28 mb-6'>Copyright @  schoolIT, 2019</p>
+    </Container>
+  )
+}
+
+export default Footer
