@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 // components
 import Button from '../button'
-import Container from '../container'
+import Container from '../Container'
 
 // assets
 import ScreenVector from '@/src/assets/ScreenVector'
