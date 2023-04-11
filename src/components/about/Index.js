@@ -33,9 +33,9 @@ function About() {
         <div className="flex ml-14 items-center">
           <p className="max-w-[512px]">
             SchoolIT Technology is designed to automate a school's diverse
-            operations from classes, exams to school events calendar. It
-            provides a powerful online community to bring parent teachers and
-            students on a common interactive platform.
+            opertions from classes, exams to school events calender. It provide
+            a powerfull online community to brings parent teachers and student
+            on a commin interactive platform.
           </p>
           <div className="ml-20 mr-24">
             <ManVector />
