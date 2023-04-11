@@ -107,7 +107,7 @@ function LoginData() {
         </div>
         <div className="text-center mt-3">
           <span className="font-semibold md:hidden">
-            If you don't have Account?&nbsp;
+            If you dont have Account?&nbsp;
             <Link href="/signup" className="text-[#F18585] font-bold">
               Sign Up
             </Link>
