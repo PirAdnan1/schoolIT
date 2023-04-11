@@ -17,11 +17,11 @@ function Navbar() {
   return (
     <>
       <Container>
-        <div className="flex flex-col md:flex-row h-screen md:h-0 justify-between md:items-center md:mt-8">
+        <nav className="flex flex-col md:flex-row mt-8 md:h-0 justify-between md:items-center md:mt-8">
           <div className="mt-4 flex justify-between items-center">
             <Logo />
             <button
-              className="text-3xl block lg:hidden  text-primary"
+              className="text-3xl block md:hidden mr-4  text-primary"
               onClick={() => setMenuClosed((closed) => !closed)}
             >
               {menuClosed ? <Burger /> : <Close />}
@@ -29,9 +29,9 @@ function Navbar() {
           </div>
           <ul
             className={clsx(
-              "md:mr-14 flex justify-center text-center px-8 md:px-0 space-y-4 md:space-y-0  md:mt-0 items-center flex-col md:flex-row",
+              "md:mr-14 flex justify-center font-medium text-center px-8 sm:px-4 md:px-0 space-y-4 md:space-y-0  md:mt-0 items-center flex-col md:flex-row",
               {
-                "translate-x-[100%] lg:translate-x-0": menuClosed,
+                "translate-x-[-100%] md:translate-x-0": menuClosed,
                 "translate-x-0": !menuClosed,
               }
             )}
@@ -61,13 +61,13 @@ function Navbar() {
               Contact
             </Link>
             <Link
-              className="md:ml-12 bg-[#F18585] px-8 md:px-16 rounded-full text-white md:py-2 py-1.5"
+              className="md:ml-12 bg-[#F18585] w-full px-2 md:px-4 lg:px-8 rounded-full hover:bg-white border-2 border-[#F18585] hover:text-[#F18585] text-white md:py-1 py-1.5"
               href="/login"
             >
               Sign In
             </Link>
           </ul>
-        </div>
+        </nav>
       </Container>
     </>
   );

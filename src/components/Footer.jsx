@@ -12,7 +12,7 @@ import Logo from '../assets/logo'
 function Footer() {
   return (
     <Container>
-    <div className='grid sm:grid-cols-3 items-center space-y-7 sm:space-y-0 justify-items-center mt-36'>
+    <div className='grid lg:grid-cols-3 items-center space-y-9 px-4 lg:px-0 lg:space-y-0 justify-items-center mt-36'>
         <div>
         <Logo />
         </div>
