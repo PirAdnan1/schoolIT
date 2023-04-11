@@ -13,7 +13,7 @@ function About() {
     <div className="grid md:grid-cols-2">
       <div>
         <div className="mt-14 ml-14">
-        <Link href="/">
+          <Link href="/">
             <Logo />
           </Link>
         </div>
@@ -34,7 +34,7 @@ function About() {
           <p className="max-w-[512px]">
             SchoolIT Technology is designed to automate a school's diverse
             operations from classes, exams to school events calendar. It
-            provides a powerful online community to bring parents teachers and
+            provides a powerful online community to bring parent teachers and
             students on a common interactive platform.
           </p>
           <div className="ml-20 mr-24">

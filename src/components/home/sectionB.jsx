@@ -13,7 +13,7 @@ function SectionB() {
     <div className='bg-[#46C3EA1A]/10 py-20 flex px-4 md:px-0 flex-col lg:flex-row items-center justify-center'>
         <div>
         <h1 className='text-[38px] max-w-[536px] '>Increase adoption across your learning community</h1>
-        <p className='mt-8 text-base max-w-[536px]'>SchoolIT is designed to automate a schools diverse operations from classes, exams to school events calendar. </p>
+        <p className='mt-8 text-base max-w-[536px]'>SchoolIT is designed to automate a school diverse operations from classes, exams to school events calendar. </p>
         <div className='flex items-center mt-8'>
         <Vector1 />
        <p className='pl-4 text-base'>Modern tools that promote technology-oriented culture and digital literacy.</p> 
