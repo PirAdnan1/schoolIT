@@ -3,7 +3,7 @@ import React from 'react'
 
 // components
 import Button from '../button'
-import Container from '../../Mycontainer/Container'
+import Container from '@/src//Mycontainer/Container'
 
 // assets
 import ScreenVector from '@/src/assets/ScreenVector'

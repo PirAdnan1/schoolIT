@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Link from "next/link";
 // components
-import Container from "../Mycontainer/Container";
+import Container from "@/src/Mycontainer/Container";
 
 // util
 import clsx from "clsx";
