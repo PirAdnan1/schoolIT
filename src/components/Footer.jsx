@@ -2,7 +2,7 @@ import React from 'react'
 import Link from 'next/link'
 
 // components
-import Container from './Container'
+import Container from '../Mycontainer/Container'
 
 
 // assets

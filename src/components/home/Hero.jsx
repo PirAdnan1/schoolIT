@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 
 // components
-import Container from "../Container";
+import Container from "../../Mycontainer/Container";
 import Button from "../button";
 
 // assets
